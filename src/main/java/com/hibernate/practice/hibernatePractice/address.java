@@ -17,6 +17,11 @@ import javax.transaction.TransactionScoped;
 @Table(name="student_address")
 public class address {
 
+	@Override
+	public String toString() {
+		return "address [addressId=" + addressId + ", street=" + street + ", city=" + city + ", isOpen=" + isOpen
+				+ ", x=" + x + ", addedDate=" + addedDate + ", image=" + Arrays.toString(image) + "]";
+	}
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="address_id")

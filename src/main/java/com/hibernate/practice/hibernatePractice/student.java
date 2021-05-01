@@ -9,9 +9,7 @@ public class student {
 
 	@Override
 	public String toString() {
-		return "student [id=" + id + ", name=" + name + ", city=" + city + ", getId()=" + getId() + ", getName()="
-				+ getName() + ", getCity()=" + getCity() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ ", toString()=" + super.toString() + "]";
+		return id +":"+ name+":"+city;
 	}
 	@Id
 	private int id;
