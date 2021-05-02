@@ -15,8 +15,15 @@ public class student {
 	private int id;
 	private String name;
 	private String city;
+	private Certificate cert;
 	public int getId() {
 		return id;
+	}
+	public Certificate getCert() {
+		return cert;
+	}
+	public void setCert(Certificate cert) {
+		this.cert = cert;
 	}
 	public void setId(int id) {
 		this.id = id;
