@@ -22,6 +22,7 @@ public class fetch {
 	    	address ad=session.get(address.class,1);
 	    	System.out.println(st);
 	    	System.out.println(ad.getStreet());
+	    	session.delete(st);
 	    	session.close();
 	    	factory.close();
 	    	
